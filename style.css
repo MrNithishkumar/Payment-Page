@@ -1,0 +1,470 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:  gray;
+}
+
+.navbar h2{
+    margin-left: 20px;
+    font-size: 25px;
+    color: black;
+    text-shadow: 2px 2px 4px white;
+}
+
+.logout-btn{
+    width: 90px;
+    height: 35px;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 2px 2px 4px black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logout-btn:hover{
+    background-color: rgb(177, 158, 158);
+}
+
+
+/* Select payment method */
+
+.payment-select-page{
+    background-color: teal;
+    width: 100%;
+    height: 150vh;
+    position: fixed;
+}
+
+.choose-pay-option{
+    background-color: gray;
+    width: 40%;
+    padding: 10px;
+    margin-left: 360px;
+    margin-top: 90px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 8px black;
+}
+
+.choose-pay-option h2{
+    margin-top: 20px;
+    color: red;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px black;
+    padding-left: 70px;
+}
+
+.pay-option{
+    margin-bottom: 20px;
+}
+.pay-link{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+    cursor: pointer;
+}
+
+.pay-link:hover{
+    background-color: teal;
+    padding: 10px 0 10px 120px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.pay-link a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px  black;
+}
+
+.pay-link i{
+    font-size: 20px;
+    color: black;
+}
+
+/* header */
+
+.section{
+    background-image: url(img/Credit-card.png.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150vh;
+    text-shadow: 2px 2px 4px black;
+    display: none;
+}
+
+.section-edit{
+    margin-left: 100px;
+}
+
+.section-edit ul li{
+    list-style: none;
+}
+
+.sb-text{
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: red;
+}
+
+.section-edit ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.section-edit ul li a:hover{
+    color: black;
+}
+
+.section-edit ul li{
+    margin-top: 20px;
+}
+
+.section-edit ul li .line{
+    display: block;
+    height: 1px;
+    width: 30%;
+    background-color: rgb(70, 65, 65);
+    margin: 10px 0;
+}
+
+.close{
+    color: red;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+    float: right;
+    padding: 20px 40px 0 0 ;
+    cursor: pointer;
+}
+
+/* upi page */
+
+.upi-page{
+    background-image: url(img/Credit-card.png.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.upi-option ul li a img{
+    width: 200px;
+    height: 100px;
+}
+
+.upi-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px 4px black;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.upi-option ul li{
+    padding-top: 15px;
+    padding-left: 60px;
+}
+
+.upi-option ul li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.upi-option{
+    font-size: 20px;
+    font-weight: bold;
+    color: goldenrod;
+    text-shadow: 2px 2px 4px black;
+}
+
+.upi-option:hover{
+    color: white;
+}
+
+/* card page */
+
+.card-page{
+    background-image: url(img/Credit-card.png.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.card-text h3{
+    color: red;
+    font-size: 26px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.input-container{
+    width: 200px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+.input-container label{
+     color: black;
+     font-size: 20px;
+     font-weight: bold;
+}
+
+.input-container input{
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgba(19, 17, 17);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    box-shadow: 4px 4px 8px black;
+}
+
+.month-cvc input{
+    height: 30px;
+    width: 192px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgba(19, 17, 17);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    box-shadow: 4px 4px 8px black;
+}
+
+.card-details{
+    padding-left:400px;
+    padding-top: 40px;
+}
+
+/* Other payment option */
+
+.op-page{
+    background-image: url(img/Credit-card.png.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 160vh;
+    display: none;
+}
+
+.upi-text{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px 4px black;
+    padding: 50px 0 0 60px;
+}
+
+.upi-img{
+    width: 200px;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.op-option{
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.op-option ul{
+    list-style: none;
+}
+
+.op-option ul li{
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.op-option ul li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.upi-option{
+    padding: 10px;
+}
+
+@media screen and (max-width: 700px){
+
+    .choose-pay-option{
+        width: 300px;
+        padding: 20px;
+        margin-top: 50px;
+        margin-left: 20px;
+        border-radius: 30px;
+        box-shadow: 4px 4px 8px black;
+    }
+    
+    .choose-pay-option h2{
+        color: red;
+        font-size: 20px;
+        text-shadow: 2px 2px 4px black;
+        padding-left: 20px;
+    }
+    
+    .pay-option{
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+    .pay-link{
+        margin-top: 30px;
+    }
+    
+    .pay-link a{
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+        color: black;
+        padding-left: 4px;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 4px black;
+        
+    }
+    
+    .pay-link i{
+        font-size: 15px;
+        color: black;
+    }
+
+    .navbar{
+        padding: 10px;
+    }
+    
+    .navbar h2{
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    
+    .logout-btn{
+        width: 70px;
+        height: 30px;
+        margin-right:    10px;
+        font-size: 10px;
+    }
+
+    .section{
+        height: 350vh;
+    }
+    
+    .section-edit{
+        margin-left: 50px;
+    }
+    
+    .upi-page{
+        height: 350vh;
+    }
+    
+    .upi-option ul li a img{
+        width: 150px;
+        height: 80px;
+    }
+    
+    .upi-title{
+        font-size: 20px;
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+    
+    .upi-option ul li{
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .card-page{
+        height: 350vh;
+    }
+
+    .card-text h3{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .input-container label{
+         font-size: 18px;
+    }
+    
+    .input-container input{
+        width: 300px;
+    }
+    
+    .month-cvc input{
+        width: 145px;
+    }
+    
+    .card-details{
+        padding-left:20px;
+        padding-top: 0px;
+    }
+    
+    /* Other payment option */
+
+.op-page{
+    height: 350vh;
+}
+
+.upi-text{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.upi-img{
+    width: 100px;
+    height: 80px;
+}
+
+.op-option{
+    padding-top: 5px;
+    padding-left: 0px;
+}
+
+.op-option ul li{
+    padding-left: 30px;
+}
+
+.close{
+    padding-left: 350px;
+    padding-top: 10px;
+}
+
+}
+

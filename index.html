@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment-page</title>
+
+    <!--My Css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar">
+        <h2> Nithish Kumar </h2>
+        <button class="logout-btn">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            <a > Logout </a>
+        </button>
+    </nav>
+
+    <!--Select payment method-->
+    <div class="payment-select-page">
+        <div class="choose-pay-option">
+            <h2> Select Your Payment Methods</h2>
+            <div class="pay-option">
+                <p class="pay-link" onclick="open_netbank()">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                    <a href="#"> Netbanking </a>
+                </p>
+                <p class="pay-link" onclick="open_upipage()">
+                    <i class="fa fa-forward" aria-hidden="true"></i>
+                    <a href="#"> Pay with UPI </a>
+                </p>
+                <p class="pay-link" onclick="opencardpage()">
+                    <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                    <a href="#"> Credit or debit card </a>
+                </p>
+                <p class="pay-link" onclick="openotherpay()">
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    <a href="#"> Other payment option </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Net Banking-->
+    <header>
+        <div class="section">
+            <div class="close"><i onclick="close_netbank()" class="fa fa-times" aria-hidden="true"></i></div>
+            <div class="section-edit">
+                <div class="sb-text"> Select Bank </div>
+                <ul>
+                    <li>
+                        <a href="https://netbanking.hdfcbank.com/netbanking/">
+                            <i class="fa fa-university" aria-hidden="true"></i>
+                            <span> HDFC Bank </span>
+                        </a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="https://www.icicibank.com/personal-banking/insta-banking/internet-banking">
+                            <i class="fa fa-university" aria-hidden="true"></i>
+                            <span> ICICI Bank </span>
+                        </a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="https://www.onlinesbi.sbi/">
+                            <i class="fa fa-university" aria-hidden="true"></i>
+                            <span> State Bank of India </span>
+                        </a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="https://canarabank.com/net-banking">
+                            <i class="fa fa-university" aria-hidden="true"></i>
+                            <span> Canara Bank </span>
+                        </a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="https://centralbank.net.in/#/">
+                            <i class="fa fa-university" aria-hidden="true"></i>
+                            <span> Central Bank of India </span>
+                        </a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="https://www.cityunionbank.com/login">
+                            <i class="fa fa-university" aria-hidden="true"></i>
+                            <span> City Union Bank </span>
+                        </a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="https://www.indianbank.net.in/jsp/startIB.jsp">
+                            <i class="fa fa-university" aria-hidden="true"></i>
+                            <span> Indian Bank </span>
+                        </a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="https://www.iobnet.co.in/ibanking/html/index.html">
+                            <i class="fa fa-university" aria-hidden="true"></i>
+                            <span> Indian Overseas Bank </span>
+                        </a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="https://www.kvb.co.in/ilogin/">
+                            <i class="fa fa-university" aria-hidden="true"></i>
+                            <span> Karur Vysya Bank </span>
+                        </a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="https://www.unionbankofindia.co.in/english/internet-banking.aspx">
+                            <i class="fa fa-university" aria-hidden="true"></i>
+                            <span> Union Bank of India </span>
+                        </a>
+                        <div class="line"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--Pay with UPI-->
+    <div class="upi-page">
+        <div class="close"><i onclick="close_netbank()" class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="upi-option">
+            <div class="upi-title"> Select on your UPI app</div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="img/gpay.png" class="upi-img">
+                        <span class="upi-option"> GPay </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/paytm.png" class="upi-img">
+                        <span class="upi-option"> Paytm </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/phonepay.png" class="upi-img">
+                        <span class="upi-option"> Phonepe </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Card option-->
+    <div class="card-page">
+        <div class="close"><i onclick="closecardpage()" class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="card-details">
+            <div class="card-text"> 
+                <h3> Add credit and debit card </h3>
+                <h4 class="mail"> All feild required </h4>
+            </div>
+            <div class="input-container">
+                <label> Card number </label>
+                <input type="number" >
+            </div>
+            <div class="month-cvc">
+                <input type="number" placeholder="MM/YY">
+                <input type="number" placeholder="CVC">
+            </div>
+            <div class="input-container">
+                <label> Cardholder name </label>
+                <input type="text">
+            </div>
+            <div class="input-container">
+                <label> State </label>
+                <input type="text">
+            </div>
+            <div class="input-container">
+                <label> Country/region </label>
+                <input type="type">
+            </div>
+        </div>
+    </div>
+
+    <!--Other payment option-->
+    <div class="op-page">
+        <div class="close"><i onclick="closeotherpay()" class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="op-option">
+            <div class="upi-text"> Select on other payment option</div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="img/bhim.png" class="upi-img">
+                        <span class="upi-option"> BHIM </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/amozon pay.png" class="upi-img">
+                        <span class="upi-option"> Amazon Pay </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/applepay.png" class="upi-img">
+                        <span class="upi-option"> Apple Pay </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/samsung.png" class="upi-img">
+                        <span class="upi-option"> Samsung Pay </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/cred.png" class="upi-img">
+                        <span class="upi-option"> CRED </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/stripe.png" class="upi-img">
+                        <span class="upi-option"> Stripe </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
